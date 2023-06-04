@@ -1,0 +1,14 @@
+@import "../../../shared/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
