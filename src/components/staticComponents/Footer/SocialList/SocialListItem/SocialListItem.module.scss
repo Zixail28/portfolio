@@ -1,0 +1,51 @@
+.socialItem {
+  border-radius: 100%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-flex;
+  outline: 2px solid #FFF;
+  padding: 2px;
+  transition: all .25s;
+
+  &:hover {
+    outline-offset: .2rem;
+
+    img {
+      animation: shake .25s;
+    }
+  }
+
+  img {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.linkedin {
+  &:hover {
+    background: #0077B5;
+    outline-color: #0077B5;
+  }
+}
+
+.github {
+  &:hover {
+    background: #171715;
+    outline-color: #171715;
+  }
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}

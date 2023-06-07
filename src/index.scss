@@ -15,6 +15,11 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: $main-color;
+  
+  background-image: url(./assets/wave-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

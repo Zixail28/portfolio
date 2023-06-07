@@ -6,9 +6,32 @@
   padding: 1.5rem 0;
 }
 
+.headerContainer {
+}
+
 .logo {
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
+  transition: 1s;
+}
+
+.logo:hover {
+  animation-name: gradient;
+  animation: gradient 1s ease infinite;
+  background-size: 200% 200%;
+  animation-duration: 4s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
