@@ -1,0 +1,21 @@
+@import "../../../shared/variables";
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background: $gradient;
+  border-radius: .6rem;
+  box-shadow: 0 0 2rem rgba($third-color, .4);
+  width: fit-content;
+  transition: transform .1s;
+
+  &:hover {
+    transform: translateY(-.1rem);
+  }
+  &:active {
+    transform: translateY(.2rem);
+  }
+}

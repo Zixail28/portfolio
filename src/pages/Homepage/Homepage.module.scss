@@ -1,0 +1,58 @@
+@import "../../shared/_variables.scss";
+
+.wrapper {
+  position: relative;
+}
+
+.titleBox {
+  font-size: 1.5rem;
+  span {
+    display: inline-flex;
+    color: $second-color;
+  }
+}
+
+.typewriterStyles {
+  display: inline;
+}
+
+.startBox {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  row-gap: 1rem;
+
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.startScreen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.homepageImg {
+  max-width: 35rem;
+
+  img {
+    max-width: 100%;
+    animation: wave 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    background-size: 200% 200%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

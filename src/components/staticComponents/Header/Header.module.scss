@@ -18,10 +18,8 @@
 }
 
 .logo:hover {
-  animation-name: gradient;
-  animation: gradient 1s ease infinite;
+  animation: gradient 4s ease infinite;
   background-size: 200% 200%;
-  animation-duration: 4s;
 }
 
 @keyframes gradient {
